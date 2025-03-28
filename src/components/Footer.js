@@ -11,10 +11,10 @@ function Footer() {
       <div className="footer-content">
         <h3 className="footer-title">Software Solutions Inc.</h3>
         <div className="footer-links">
-          <a href="#" className="footer-link">About</a>
-          <a href="#" className="footer-link">Services</a>
-          <a href="#" className="footer-link">Privacy</a>
-          <a href="#" className="footer-link">Terms</a>
+          <a href="/about" className="footer-link">About</a>
+          <a href="/services" className="footer-link">Services</a>
+          <a href="/privacy-policy" className="footer-link">Privacy</a>
+          <a href="/terms-of-service" className="footer-link">Terms</a>
         </div>
         <div className="footer-socials">
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-link">
