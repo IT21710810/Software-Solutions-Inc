@@ -1,0 +1,122 @@
+.footer {
+    background: linear-gradient(90deg, #1e3a8a, #a855f7);
+    color: white;
+    padding: 30px 20px; /* Adjusted padding for better spacing */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+    opacity: 0.1;
+    z-index: 0;
+  }
+  
+  .footer-content {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Adjusted spacing between elements */
+  }
+  
+  .footer-title {
+    font-size: 1.8em; /* Slightly smaller for better balance */
+    font-weight: 600;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 20px; /* Adjusted spacing between links */
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .footer-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #2dd4bf; /* Teal underline */
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
+  }
+  
+  .footer-link:hover {
+    color: #2dd4bf; /* Teal on hover */
+  }
+  
+  .footer-link:hover::after {
+    width: 100%; /* Underline animation on hover */
+  }
+  
+  .footer-socials {
+    display: flex;
+    gap: 15px; /* Adjusted spacing between icons */
+  }
+  
+  .social-link {
+    color: white;
+    font-size: 1.5em; /* Slightly smaller for better balance */
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .social-link:hover {
+    color: #2dd4bf; /* Teal on hover */
+    transform: scale(1.1); /* Slight scale on hover */
+  }
+  
+  .footer-copyright {
+    font-size: 0.9em;
+    color: #d1d5db; /* Light gray for contrast */
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      padding: 20px 15px;
+    }
+  
+    .footer-title {
+      font-size: 1.5em;
+    }
+  
+    .footer-links {
+      gap: 15px;
+    }
+  
+    .footer-link {
+      font-size: 0.9em;
+    }
+  
+    .social-link {
+      font-size: 1.3em;
+    }
+  
+    .footer-copyright {
+      font-size: 0.8em;
+    }
+  }
